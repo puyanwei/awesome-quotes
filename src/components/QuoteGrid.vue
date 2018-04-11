@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="row">
-      <singleQuote v-for="quote in quotes">{{ quote }}</singleQuote>
+      <singleQuote v-for="quote in quotes" @click.native="deleteQuote">{{ quote }}</singleQuote>
   </div>
 </template>
 
